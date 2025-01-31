@@ -1,37 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- 🌟 Meta magic for responsiveness and encoding -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name | Web Developer Portfolio</title>
+    <title>PhobiaCide | Web Developer Extraordinaire 🚀</title>
+    <!-- 🎨 Halfmoon CSS - Styling like a pro -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/halfmoon@2.0.2/css/halfmoon.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/halfmoon@2.0.2/css/cores/halfmoon.modern.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <!-- ✨ Topcoat CSS - Smooth UI elements -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/topcoat/0.8.0/css/topcoat-mobile-dark.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header>
-      <h1>Your Name</h1>
-      <p>Web Developer | JavaScript | CSS | HTML5</p>
+  <body data-bs-theme="dark" data-bs-core="modern" class="text-body bg-body">
+    <header class="text-center text-body bg-secondary mb-5 subpixel-antialiased">
+      <div class="bg-body bg-opacity-50">
+      <h1>PhobiaCide</h1>
+      <h3>Clean Code Admirer | Pixel Perfectionist</h3>
+      <p class="text-info">Crafting Code &amp; Conquering Pixels</p>
+      <sup class="text-muted">JavaScript | CSS | HTML5 </sup>
+    </div>
     </header>
-    <section id="projects">
-      <h2>My Projects</h2>
-      <ul>
-        <li>
-          <a href="projects/to-do-list/index.html">To-Do List App</a>
-        </li>
-        <li>
-          <a href="projects/weather-dashboard/index.html">Weather Dashboard</a>
-        </li>
-        <li>
-          <a href="projects/multi-page-business/index.html">Business Website</a>
-        </li>
-        <li>
-          <a href="projects/api-driven-dashboard/index.html">Data Dashboard</a>
-        </li>
-        <!-- Other projects -->
-      </ul>
-    </section>
-    <footer>
-      <p>Contact: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <main class="container p-5">
+      <article id="intro" class="card p-2 my-5">
+        <h2 class="text-center card-header text-primary mb-5">👋 Welcome to My Digital Portfolio!</h2>
+        <p class="lead">
+          Hey there! I'm <strong>PhobiaCide</strong>, a passionate web developer who thrives on
+          clean code, pixel-perfect designs, and user-friendly experiences.
+        </p>
+        <p>
+          I specialize in crafting <strong>responsive</strong>, <strong>accessible</strong>, and <strong>high-performance</strong> web applications using 
+          modern front-end technologies. From dynamic dashboards to seamless e-commerce platforms, I bring ideas 
+          to life—one line of code at a time. 🚀
+        </p>
+        <p class="text-muted">
+          Scroll down to check out my projects or reach out if you'd like to collaborate! 🎨💻
+        </p>
+      </article>
+      
+      <hr>
+      
+      <article id="resume" class="card p-2 my-5">
+        <h2 class="text-center card-header text-primary mb-5">📄 Resume</h2>
+      <div class="row">
+        <section class="mb-2 col-md-6">
+          <h3 class="text-secondary">🛠️ Technical Skills</h3>
+          <ul class="list-group topcoat-list__container">
+            <li class="list-group-item topcoat-list__item">HTML5, CSS3, JavaScript (ES6+)</li>
+            <li class="list-group-item topcoat-list__item">React, Vue.js, Astro</li>
+            <li class="list-group-item topcoat-list__item">Node.js, Express, MongoDB</li>
+            <li class="list-group-item topcoat-list__item">REST APIs, GraphQL, WebSockets</li>
+            <li class="list-group-item topcoat-list__item">Git, GitHub, CI/CD Pipelines</li>
+            <li class="list-group-item topcoat-list__item">UX/UI Design, Responsive Web Development</li>
+          </ul>
+        </section>
+      
+        <section class="mb-2 col-md-6">
+          <h3 class="text-secondary">💼 Work Experience</h3>
+          <div class="content">
+            <h4 class="text-info">Senior Front-End Developer | Awesome Tech Co.</h4>
+            <p class="text-muted">2021 - Present</p>
+            <ul  class="list-group topcoat-list__container">
+              <li class="list-group-item topcoat-list__item">Developed a high-performance UI for a data analytics dashboard.</li>
+              <li class="list-group-item topcoat-list__item">Optimized front-end codebase, reducing load times by 35%.</li>
+              <li class="list-group-item topcoat-list__item">Led front-end architecture decisions and mentored junior developers.</li>
+            </ul>
+          </div>
+          
+          <div class="content">
+            <h4 class="text-info">Web Developer | Creative Agency XYZ</h4>
+            <p class="text-muted">2018 - 2021</p>
+            <ul class="list-group topcoat-list__container">
+              <li class="list-group-item topcoat-list__item">Built and maintained multiple client websites using modern front-end frameworks.</li>
+              <li class="list-group-item topcoat-list__item">Integrated APIs to enhance website interactivity and performance.</li>
+              <li class="list-group-item topcoat-list__item">Developed reusable components for rapid project deployment.</li>
+            </ul>
+          </div>
+        </section>
+      
+        <section class="mb-2 col-md-6">
+          <h3 class="text-secondary">🎓 Education</h3>
+          <p><strong>Bachelor's Degree in Computer Science</strong> – Tech University (2014 - 2018)</p>
+        </section>
+      
+        <section class="mb-2 col-md-6">
+          <h3 class="text-secondary">📜 Certifications</h3>
+          <ul class="list-group topcoat-list__container">
+            <li class="list-group-item topcoat-list__item">Google Mobile Web Specialist Certification</li>
+            <li class="list-group-item topcoat-list__item">JavaScript Algorithms and Data Structures - freeCodeCamp</li>
+            <li class="list-group-item topcoat-list__item">Frontend Masters Advanced JavaScript</li>
+          </ul>
+        </section>
+      
+        <section class="mb-2 col-md-6">
+          <h3 class="text-secondary">🏆 Achievements</h3>
+          <ul class="list-group topcoat-list__container">
+            <li class="list-group-item topcoat-list__item">Developed a portfolio site featured on CSS-Tricks.</li>
+            <li class="list-group-item topcoat-list__item">Contributed to open-source projects with 5K+ stars on GitHub.</li>
+            <li class="list-group-item topcoat-list__item">Speaker at local web development meetups.</li>
+          </ul>
+        </section>
+        </div>
+      </article>
+      
+      <article id="projects" class="card p-2 my-5">
+        <h2 class="text-center card-header rounded-top-5">🚀 My Projects</h2>
+        <ul class="card-body topcoat-list__container bg-info bg-opacity-10 rounded-bottom-5">
+          <li class="topcoat-list__item">
+            <details>
+              <summary>📝 Custom Blog with CMS</summary>
+              <section>
+                <p>
+                  A dynamic blog system with a built-in
+                  <abbr title="Content Management System">CMS</abbr>. Users can
+                  create, edit, and delete posts effortlessly. Built with
+                  JavaScript, local storage, and lightweight CSS for a clean UI.
+                </p>
+                <img
+                  src="assets/img/blog-cms-demo.png"
+                  alt="Blog CMS Preview"
+                  class="img-responsive"
+                />
+                <p><strong>How to Use:</strong></p>
+                <ol>
+                  <li>Click "New Post" to start writing.</li>
+                  <li>Format your post with the simple text editor.</li>
+                  <li>Save posts locally or publish them.</li>
+                </ol>
+                <a
+                  href="./projects/custom-blog-with-cms/index.html"
+                  class="btn btn-primary"
+                  >Try it now! 🔗</a
+                >
+              </section>
+            </details>
+          </li>
+          <li class="topcoat-list__item">
+            <details>
+              <summary>🛒 E-Commerce Checkout</summary>
+              <section>
+                <p>
+                  A sleek and responsive checkout page built for an e-commerce
+                  platform. Includes real-time form validation, a dynamic
+                  shopping cart, and smooth user experience.
+                </p>
+                <img
+                  src="assets/img/ecommerce-checkout.png"
+                  alt="E-Commerce Checkout Demo"
+                  class="img-responsive"
+                />
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                  <li>🛍️ Add/remove items from cart</li>
+                  <li>💳 Real-time form validation</li>
+                  <li>🚀 Fast and responsive UI</li>
+                </ul>
+                <a
+                  href="./projects/e-commerce-checkout/"
+                  class="btn btn-primary"
+                  >Shop Now! 🛒</a
+                >
+              </section>
+            </details>
+          </li>
+          <li class="topcoat-list__item">
+            <details>
+              <summary>📊 Interactive Data Dashboard</summary>
+              <section>
+                <p>
+                  A real-time data dashboard that visualizes analytics with
+                  interactive charts and filters. Ideal for monitoring trends,
+                  sales, or any dynamic dataset.
+                </p>
+                <img
+                  src="assets/img/data-dashboard.png"
+                  alt="Data Dashboard Preview"
+                  class="img-responsive"
+                />
+                <p><strong>How to Use:</strong></p>
+                <ul>
+                  <li>Select a dataset or upload your own.</li>
+                  <li>Filter, sort, and visualize data dynamically.</li>
+                  <li>Export reports with one click.</li>
+                </ul>
+                <a
+                  href="./projects/api-driven-dashboard/index.html"
+                  class="btn btn-primary"
+                  >Explore the Stats 📈</a
+                >
+              </section>
+            </details>
+          </li>
+          <li class="topcoat-list__item">
+            <details>
+              <summary>🏢 Multi-Page Business Website</summary>
+              <section>
+                <p>
+                  A professional multi-page website built for a business.
+                  Includes service pages, a contact form, and a clean, modern
+                  design.
+                </p>
+                <img
+                  src="assets/img/business-site.png"
+                  alt="Business Website Preview"
+                  class="img-responsive"
+                />
+                <p><strong>Pages Included:</strong></p>
+                <ul>
+                  <li>🌐 Homepage</li>
+                  <li>📄 About Us</li>
+                  <li>📧 Contact Form</li>
+                </ul>
+                <a
+                  href="./projects/multi-page-business/index.html"
+                  class="btn btn-primary"
+                  >Visit Website 🌍</a
+                >
+              </section>
+            </details>
+          </li>
+          <li class="topcoat-list__item">
+            <details>
+              <summary>✅ To-Do List App</summary>
+              <section>
+                <p>
+                  A productivity app for managing your tasks. Simple,
+                  lightweight, and mobile-friendly. Add, edit, and complete
+                  tasks with ease.
+                </p>
+                <img
+                  src="assets/img/todo-app.png"
+                  alt="To-Do List App Preview"
+                  class="img-responsive"
+                />
+                <p><strong>How to Use:</strong></p>
+                <ul>
+                  <li>Add a task and set a deadline.</li>
+                  <li>Mark completed tasks to track progress.</li>
+                  <li>Remove or edit tasks as needed.</li>
+                </ul>
+                <a
+                  href="./projects/to-do-list/index.html"
+                  class="btn btn-primary"
+                  >Stay Productive! ✅</a
+                >
+              </section>
+            </details>
+          </li>
+          <li class="topcoat-list__item rounded-bottom-5">
+            <details>
+              <summary>☁️ Weather Dashboard</summary>
+              <section>
+                <p>
+                  A weather tracking dashboard with real-time updates and
+                  location-based forecasts.
+                </p>
+                <img
+                  src="assets/img/weather-dashboard.png"
+                  alt="Weather Dashboard Preview"
+                  class="img-responsive"
+                />
+                <p><strong>Features:</strong></p>
+                <ul>
+                  <li>🌦️ Current weather conditions</li>
+                  <li>📍 Location-based search</li>
+                  <li>🗓️ 5-day forecast</li>
+                </ul>
+                <a
+                  href="./projects/weather-dashboard/index.html"
+                  class="btn btn-primary"
+                  >Check the Weather! ☀️</a
+                >
+              </section>
+            </details>
+          </li>
+        </ul>
+      </article>
+      <div class="my-5"></div>
+    </main>
+    <footer class="text-center fixed-bottom w-auto rounded-top-5 bg-secondary m-0 p-0">
+      <small>
+        <p class="p-0 m-0">
+        Need a web developer? ☎️ Let's talk:
+        </p>
+        <a href="mailto:aamason86@gmail.com">aamason86@gmail.com</a>
+      </small>
     </footer>
+    <!-- Separate Popper and Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha256-whL0tQWoY1Ku1iskqPFvmZ+CHsvmRWx/PIoEvIeWh4I="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha256-3gQJhtmj7YnV1fmtbVcnAV6eI4ws0Tr48bVZCThtCGQ="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom Script -->
     <script src="js/main.js"></script>
   </body>
 </html>
