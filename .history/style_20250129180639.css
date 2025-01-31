@@ -1,0 +1,6 @@
+details[open] > summary {
+    background-color: navy;
+    position: relative;
+    top: 0;
+    right: 50%;
+}

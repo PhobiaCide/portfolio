@@ -1,0 +1,10 @@
+details[open] > summary {
+    padding-left: 1vw;
+    font-size: 21pt;
+}
+summary {
+    cursor: pointer;
+}
+section {
+    height: 100vh;
+}
