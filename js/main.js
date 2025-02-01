@@ -23,13 +23,17 @@ if (theme) {
 document.addEventListener("DOMContentLoaded", function () {
   Particles.init({
     selector: ".background",
-    color: ["#03dac6", "#ff0266", "#000000"],
+    color: ["#444444", "#555555", "#666666", "#777777", "#888888", "#999999", "#aaaaaa", "#bbbbbb", "#cccccc"],
     connectParticles: true,
+    maxParticles: 200,
+    speed: 0.5,
+    minDistance: 100,
+    sizeVariations: 13,
     responsive: [
       {
         breakpoint: 768,
         options: {
-          color: ["#faebd7", "#03dac6", "#ff0266"],
+          color: ["#A78BFA", "#F87171", "#34D399", "#60A5FA", "#D946EF"],
           maxParticles: 43,
           connectParticles: false,
         },
@@ -37,3 +41,4 @@ document.addEventListener("DOMContentLoaded", function () {
     ],
   });
 });
+
