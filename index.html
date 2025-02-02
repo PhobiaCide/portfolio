@@ -19,6 +19,7 @@
       crossorigin="anonymous"
     />
     <link
+      id="topcoat-stylesheet"
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/topcoat/0.8.0/css/topcoat-mobile-dark.min.css"
       crossorigin="anonymous"
@@ -30,7 +31,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
   </head>
   <body data-bs-theme="dark" data-bs-core="modern" class="text-body bg-body">
-    <canvas class="background fixed-top w-100 h-100 z-n1"></canvas>
+    <canvas class="background fixed-top w-100 h-100 z-n1" style="filter:blur(1px)"></canvas>
     <header
       id="page-header"
       class="text-center text-body bg-secondary mb-5 subpixel-antialiased rounded-bottom-5 sticky-top"
@@ -42,22 +43,29 @@
           >Crafting Code &amp; Conquering Pixels</small
         >
         <sup class="text-muted">JavaScript | CSS | HTML5</sup>
+        <button id="mode-toggle" class="position-relative float-right ms-auto">
+          <span class="sun">☀️</span>
+          <span class="moon">🌙</span>
+        </button>
       </div>
     </header>
     <main class="container p-5">
       <article id="intro" class="container my-4">
-        <hgroup class="card">
-          <h2 class="text-center card-header text-primary mb-5">
+        <div class="container-fluid">
+          <h2 class="text-center text-primary mb-5">
             👋 Welcome to My Digital Portfolio!
           </h2>
-          <div class="card-body px-5">
-            <p class="card-text">
+          <div class="row px-5">
+            <p class="text-center text-primary h3">
               Hey there! I'm <strong>PhobiaCide</strong>, a passionate web
               developer who thrives on clean code, pixel-perfect designs, and
               user-friendly experiences.
             </p>
-            <div class="row my-5">
-              <div class="col-md-8">
+            <section class="card col-md-8 me-auto">
+              <header class="card-header">
+                <h3>🖥️ My First Computer</h3>
+              </header>
+              <div class="card-body">
                 <p class="card-text">
                   My journey into tech started when I was 8 years old, tinkering
                   with my grandpa's IBM clone, which had no hard drive and
@@ -73,7 +81,7 @@
                   technology began.
                 </p>
               </div>
-              <figure class="figure col-md-4">
+              <figure class="figure card-footer">
                 <img
                   src="https://github.com/PhobiaCide/portfolio/blob/main/assets/img/ibm-clone.jpg?raw=true"
                   alt="IBM Clone PC resembling an old IBM PC with dual floppy drives"
@@ -85,9 +93,9 @@
                   drives.
                 </figcaption>
               </figure>
-            </div>
-            <div class="row my-5">
-              <figure class="figure col-md-4">
+            </section>
+            <section class="card col-md-8 ms-auto">
+              <figure class="figure card-header">
                 <img
                   src="https://github.com/PhobiaCide/portfolio/blob/main/assets/img/BASIC.png?raw=true"
                   alt="Screenshot of BASIC programming snippet"
@@ -98,7 +106,8 @@
                   A very basic example of a BASIC program snippet
                 </figcaption>
               </figure>
-              <p class="col-md-8 card-text">
+              <div class="card-body">
+              <p class="card-text">
                 But computers weren't just something I used; they were something
                 I explored. I had a math textbook that included
                 <strong>BASIC programming snippets</strong>, and I spent hours
@@ -107,9 +116,10 @@
                 unlocked something special: the ability to make a machine
                 <strong>do what I wanted</strong>—a superpower in the making.
               </p>
+              </div>
             </div>
-            <div class="row my-5">
-              <div class="col-md-8">
+            <div class="card col-md-5 my-5">
+              <div class="card-body">
                 <p class="card-text">
                   In middle school, I had access to a bunch of
                   <strong>Apple II computers</strong> that were mostly gathering
@@ -125,7 +135,7 @@
                   learn more.
                 </p>
               </div>
-              <figure class="figure col-md-4">
+              <figure class="figure card-footer">
                 <img
                   src="https://github.com/PhobiaCide/portfolio/blob/main/assets/img/AppleII.jpg?raw=true"
                   alt="An example of an Apple II computer setup"
@@ -137,8 +147,8 @@
                 </figcaption>
               </figure>
             </div>
-            <div class="row my-5">
-              <figure class="figure col-md-4">
+            <div class="card col-md-6 my-5">
+              <figure class="figure card-header">
                 <img
                   src="https://github.com/PhobiaCide/portfolio/blob/main/assets/img/surf-the-web.jpg?raw=true"
                   alt="An illustration of 90s web culture"
@@ -149,7 +159,7 @@
                   They were some crazy times!
                 </figcaption>
               </figure>
-              <div class="col-md-8">
+              <div class="card-body">
                 <p class="card-text">
                   By the time the internet was in full swing; a time of i-frames
                   and Macromedia Flash; I was building web pages on
@@ -162,8 +172,8 @@
                 </p>
               </div>
             </div>
-            <div class="row my-5">
-              <div class="col-md-8">
+            <div class="card col-md-6 my-5">
+              <div class="card-body">
                 <p class="card-text">
                   Fast forward to today, and that same curiosity still drives
                   me. I've spent the past <strong>five years</strong> honing my
@@ -178,7 +188,7 @@
                   >
                 </p>
               </div>
-              <figure class="figure col-md-4">
+              <figure class="figure card-footer">
                 <img
                   src="https://github.com/PhobiaCide/portfolio/blob/main/assets/img/language-of-the-web.jpg?raw=true"
                   alt="HTML, CSS, and JavaScript the language of the web"
@@ -190,8 +200,8 @@
                 </figcaption>
               </figure>
             </div>
-            <div class="row my-5">
-              <figure class="figure col-md-4">
+            <div class="card my-5 col-md-6">
+              <figure class="figure card-header">
                 <img
                   src="https://github.com/PhobiaCide/portfolio/blob/main/assets/img/excellence.jpg?raw=true"
                   alt="The way to excellence"
@@ -202,8 +212,8 @@
                   I pursue excellence
                 </figcaption>
               </figure>
-              <div class="col-md-8">
-                <p>
+              <div class="card-body">
+                <p class="card-text">
                   Now, I specialize in crafting
                   <strong>responsive, accessible, and high-performance</strong>
                   web applications using modern front-end technologies. Whether
@@ -218,7 +228,7 @@
               collaborate! 🎨💻
             </p>
           </div>
-        </hgroup>
+        </section>
       </article>
       <hr />
       <article id="resume" class="card p-2 my-5">

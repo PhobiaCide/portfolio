@@ -5,3 +5,66 @@ details[open] > summary {
 summary {
     cursor: pointer;
 }
+#mode-toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    background: transparent; /* Base color of the button */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  #mode-toggle span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+  }
+.sun {
+    background: #ffd700;
+    font-size: 1.5rem;
+    opacity: 1;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2),
+      -2px -2px 4px rgba(255, 255, 255, 0.7);
+  }
+  
+  .moon {
+    background: #1e90ff;
+    font-size: 1.5rem;
+    opacity: 0;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2),
+      -2px -2px 4px rgba(255, 255, 255, 0.7);
+  }
+  
+  button.sun-active .sun {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) scale(1.5);
+    -moz-transform: translate(-50%, -50%) scale(1.5);
+    -ms-transform: translate(-50%, -50%) scale(1.5);
+    -o-transform: translate(-50%, -50%) scale(1.5);
+}
+  
+  button.sun-active .moon {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+  }
+  
+  button.moon-active .sun {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+  }
+  
+  button.moon-active .moon {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 1;
+  }
+  
